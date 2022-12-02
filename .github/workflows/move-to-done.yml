@@ -1,5 +1,9 @@
 name: Asana link
 on:
+  pull_request:
+    types: [opened, reopened]
+  pull_request_review:
+    types: [submitted]
   push:
     branches:
       - master
@@ -15,4 +19,4 @@ jobs:
           asana_secret: "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"
           github_token: "HWOW6PFASQ6QIFM4H3CFHL63Y4OXYJCYIPGXO4SXTNMJTOWDBZ4B35OI"
           asana_pat: "1/1203483231849943:df31f6017cda1f3e05ef2406e4d216c3"
-          target: '{"APPROVED": "Ready For QA", "OPEN": "Code Review", "CLOSED": "Ready For QA", "MERGED": "Approved"}'
+          target: '{"APPROVED": "", "OPEN": "Code Review", "CLOSED": "Ready For QA", "MERGED": "Released"}'
