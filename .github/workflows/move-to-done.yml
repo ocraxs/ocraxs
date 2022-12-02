@@ -1,9 +1,5 @@
 name: Asana link
 on:
-  pull_request:
-    types: [opened, reopened]
-  pull_request_review:
-    types: [submitted]
   push:
     branches:
       - master
